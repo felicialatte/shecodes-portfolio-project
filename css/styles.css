@@ -2,6 +2,7 @@
     --branding-color: #BF8282;
     --primary-color: #AD6E6E;
     --secondary-color : #f9f4f4;
+    --background-color: #f2e6e6;
     --heading-font-family: "Playfair Display", serif;
     --default-font-family: "Poppins", serif;
 }
@@ -54,6 +55,36 @@ margin: 0;
 .hero h2 strong {
     color: var(--primary-color);
 }
+
+.index-image {
+    border-radius: 50%;
+}
+
+.index-icons {
+background: var(--branding-color);
+padding: 10px;
+font-size: 30px;
+border-radius: 80px;
+}
+
+.index-icons:hover {
+    background-color: var(--primary-color);
+}
+
+.full-bleed {
+    box-shadow: 0 0 0 100vmax var(--background-color);
+    clip-path: inset(0 -100vmax);
+}
+
+.about-container {
+    background-color: var(--background-color);
+}
+
+.about-container h2 strong {
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
 
 .about-section {
 padding: 160px 20px;
@@ -132,6 +163,11 @@ padding: 160px 20px;
     .about-section {
         text-align: center;
         padding: 0;
+    }
+
+    .about-h2 {
+     font-size: 35px;
+     margin-top: 0;
     }
 
     .project-description {
