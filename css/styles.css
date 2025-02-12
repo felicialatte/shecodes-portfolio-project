@@ -146,6 +146,11 @@ padding: 160px 20px;
     padding: 120px 60px;
 }
 
+.project-description h2 strong {
+    font-style: normal;
+    font-weight: 400;
+}
+
 @media (max-width: 900px) {
     h1 {
         font-size: 44px;
