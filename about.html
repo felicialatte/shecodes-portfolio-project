@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="About Felicia. Felicia is a front-end engineer based in Belgium.">
+    <title>About Felicia Audrey | felicialatte</title>
+    
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +17,39 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="content-container container">
+    <div class="container">
+        <nav class="d-flex justify-content-between">
+            <a href="/" title="Homepage">
+                <img
+                    src="images/logo.png"
+                    alt="felicialatte logo"
+                    class="logo d-none d-md-block">
+                <img
+                    src="images/logo-small.png"
+                    alt="felicialatte logo"
+                    class="logo d-block d-md-none">
+            </a>
+            <ul>
+                <li>
+                    <a href="/" title="Homepage">Home</a>
+                </li>
+                <li class="active">
+                    <a href="/about.html" title="About Felicia">About</a>
+                </li>
+                <li>
+                    <a href="/work.html" title="Felicia's Work">Work</a>
+                </li>
+                <li>
+                    <a href="/contact.html" title="Contact Felicia">Contact</a>
+                </li>
+            </ul>
+            <div class="email-nav d-none d-md-block">
+                <a href="/contact.html#contact">hello@felicialatte.com</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content-container container mb-5">
         <div class="row">
 
             <div class="col-lg-6">
@@ -23,16 +57,48 @@
                     <h1 class="mb-4">Hi, I am <br>Felicia Audrey<br></h1>
                     <h2 class="mb-4"><strong>Front-end Developer</strong>, based in Belgium.</h2>
                     <p class="mb-5">For anyone who wants to start learning code, this workshop is very interesting. You will be challenged  with different exercises, and everything is well explained, homework and deadlines are good for keep focus</p>
-                    <a href="http://" class="btn btn-branding">See my projects</a>
+                    <a href="/work.html" class="btn btn-branding">See my projects</a>
                 </div>
             </div>
             
             <div class="col-lg-6">
-                <img src="images/felicia2.jpg" alt="" class="img-fluid rounded">
+                <img src="images/felicia2.jpg" alt="An image of Felicia Audrey" class="img-fluid rounded">
             </div>
 
         </div>    
-    </div>
+    
+        <footer>
+            <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+                <div>
+                    <h3>Work Inquiry</h3>
+                    <p class="text-muted">Let's work together!</p>
+                </div>
+                <div>
+                    <a href="/contact.html" class="btn btn-branding mt-3" title="Contact Felicia">Contact me</a>
+                </div>
+            </div>
 
+            <div class="d-flex justify-content-center mb-5">
+                <a href="mailto:audreyfelicia.feli@gmail.com" class="email-link" title="Email Felicia">audreyfelicia.feli@gmail.com</a>
+            </div>
+            <div class="social-links d-flex justify-content-center">
+                <a href="https://github.com/felicialatte" target="_blank" title="GitHub Profile">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/felicialatte" target="_blank" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://x.com/felicialatte" target="_blank" title="Twitter (X) Profile">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+            <p class="text-center mt-5">
+                ✌️This project was coded with 🩷 by Felicia, and it's
+                <a href="https://github.com/felicialatte/shecodes-portfolio-project" target="_blank" class="footer-link">
+                    open-sourced 
+                </a>
+            </p>
+        </footer>
+    </div>
 </body>
 </html>

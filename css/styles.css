@@ -26,7 +26,7 @@ h2 {
   font-size: 64px;  
 }
 
-h4 {
+h3 {
     font-size: 48px;
 }
 
@@ -40,7 +40,7 @@ p {
 .hero {
     background-color: var(--secondary-color);
     text-align: center;
-    padding: 160px 20px;
+    padding: 100px 20px;
 }
 
 .hero p {
@@ -91,7 +91,7 @@ border-radius: 80px;
 
 
 .content-container {
-padding: 160px 20px;
+padding: 60px 20px;
 }
 
 .content h1 {
@@ -127,6 +127,22 @@ padding: 160px 20px;
 .content h2 strong {
     color: var(--primary-color);
 }
+
+.links, .contact-links {
+    text-decoration: none;
+    color: black; 
+}
+.links:hover {
+    color: var(--branding-color);
+    transition: all 150ms ease-in-out;
+}
+
+.contact-links:hover {
+    color: var(--branding-color);
+    text-decoration: underline;
+    transition: all 150ms ease-in-out;
+}
+
 
 .btn-branding {
     background: var(--branding-color);
@@ -239,16 +255,15 @@ footer .contac-box p {
 }
 
 footer .email-link {
-text-decoration: none;
-color: black;
-font-size: 24px;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
 }
 
 footer .email-link:hover {
     color: var(--primary-color);
+    text-decoration: none;
 }
-
-
 
 footer .social-links a {
     margin: 0 20px;
@@ -265,6 +280,12 @@ footer .social-links a:hover {
     transition: all 100ms ease-in-out;
 }
 
+.footer-link {
+    text-decoration: none;
+    color: var(--branding-color);
+    font-weight: 500;
+}
+
 
 @media (max-width: 900px) {
     h1 {
@@ -276,16 +297,12 @@ footer .social-links a:hover {
         font-size: 30px;
     }
 
-    h4 {
+    h3 {
        font-size: 18px; 
     }
 
     p {
         font-size: 14px;
-    }
-
-    .hero {
-        padding: 80px 20px;
     }
 
     .hero p {
@@ -317,6 +334,11 @@ footer .social-links a:hover {
 
     footer .contact-box {
         padding: 30px;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+        color: var(--primary-color);
     }
 }
 
